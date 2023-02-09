@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
-import v1 from "../V1-tbl1.json";
+import v1 from "../V1.json";
 
 function Motion2({handleStep,textButton}) {
 
@@ -27,38 +27,29 @@ function Motion2({handleStep,textButton}) {
   };
     return (
       <div className="container">
-        <h1>Commençons par le 1er jeu !</h1>
+        <img className='img-motion2' src='./img/group-12.webp' alt='tt'/>
+        <h1 className='h1-motion2' >Commençons par le 1er jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
           height={600}
           width={390}
           onComplete={() => setShow(false)}
+         
         />
+        
       {
         show ? "" : 
         <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
       }
         
-        <button onClick={handleShowTranscription}>Transcription écrite</button> 
+        <button className='btn2-motion2' onClick={handleShowTranscription}>Transcription écrite</button> 
 {showTranscription ? "" :
-        <p> (François Mauriac)	- Viens me voir ! Je suis François Mauriac, le buste avec un style <br/>
-      cubique. Veux-tu que je te raconte mon histoire ?<br/>
-      
-      (Albert Marquet )	- Arrête d'écouter cet écrivain, il va encore te parler sa remise de prix<br/>
-      concernant ces livres. Mais vient plutôt admirer mes tableaux notamment mon autoportrait ! Tu le trouve beau, n’est ce pas !<br/>
-      
-      (André Lhote)	- Viens plutôt contempler mon autoportrait ! Il y a tellement de nuances !<br/>
-      Alors chez Albert Marquet, c’est assez terne, maussade.<br/>
-      
-      (François Mauriac)	- Arrêtez vous mes amis ! Vos deux oeuvres sont très belles à<br/>
-      leur manière ! Je crois que notre chèr visiteur, n’est pas venu par hasard ! Alors hâtez vous de lui donner les instructions concernant le 1er chiffre du cadenas !<br/>
-      
-      (André Lhote)	- Je comprends mieux ! Mais pourquoi moi ? Albert Marquet peut<br/>
-      également le faire !
-      
-      (Albert Marquet )	- Certainement monsieur ! Je suis bien plus en mesure de le faire que<br/>
-      notre spécialiste en cubisme André Lhote !<br/>
-      Vas nous voir, que ce soit André Lhote, François Mauriac et moi même. Tu obtiendras de chacun de nous, un chiffre, qu’il faudra additionner. Cela te donnera le premier élément du cadenas !
+        <p className='text-motion2' > <strong>Bonjour chère camarade !</strong> <br/>
+
+         Je vais t’aider à trouver la combinaison du cadenas verrouillant le fameux coffre. <br/>
+
+        Rends toi devant mes œuvres ! <br/> Sauras-tu retrouver un de mes tableaux comportant un chiffre. 
+        <br/>Celui-ci te donnera le premier chiffre du cadenas. <br/>Et n’hésite pas à prendre un peu de temps pour le contempler !
       </p>
 }
       </div>
