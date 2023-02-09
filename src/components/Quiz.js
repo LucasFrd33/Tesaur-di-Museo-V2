@@ -25,7 +25,7 @@ function Quiz({text, textButton, handleStep, title, image}) {
       
       {title}
       <p>{text}</p>
-      <button onClick={handleStep} >{textButton}</button>
+      <button className="btn-quiz" onClick={handleStep} >{textButton}</button>
       {image}
     </div>
     

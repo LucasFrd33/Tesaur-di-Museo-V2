@@ -55,6 +55,7 @@ code {
   }
   p{
     padding: 1em;
+    line-height: 25px;
   }
   h1 {
     margin-top: 41%;
@@ -62,6 +63,7 @@ code {
     font-weight: 500;
     margin-left: 1em;
     padding-right: 2em;
+    
   }
 
 
@@ -77,14 +79,28 @@ code {
     margin-top: 23% !important;
     width: 45% !important;
     margin-right: 55% !important;
-}
+  }
   
-  .text-quiz{
+  .text-quiz {
     padding: 1em;
     padding-right: 2em;
-    margin-block-start: -3em !important;
-  }
+    margin-block-start: -2em !important;
+    margin-block-end: -3em !important;
+}
 
+  .btn-quiz{
+    font-size: 14pt;
+    background-color: white;
+    border: solid 3.5px black;
+    padding-top: 1.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1.5%;
+    margin-top: 15%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-right: 234px;
+  }
 
   .button-motion-1{
     margin-top: 55%;
@@ -101,6 +117,30 @@ code {
     left: 170px;
     top: -41.54px;
   }
+
+  .img-motion2{
+    width: 56%;
+    margin-left: 172px;
+  }
+  .h1-motion2{
+    margin-top: -13% !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-left: 1em;
+    padding-right: 2em;
+    -webkit-text-stroke: 1px white;
+  }
+  .btn2-motion2 {
+    margin-bottom: 7px;
+    margin-top: 7% !important;
+}
+
+  .text-motion2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 91px;
+}
+
 
   svg{
     position: absolute;
