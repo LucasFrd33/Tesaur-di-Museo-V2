@@ -36,13 +36,15 @@ function Motion2({handleStep,textButton}) {
           onComplete={() => setShow(false)}
          
         />
-        
-      {
+      <div className="actions">
+        {
         show ? "" : 
-        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
-      }
+          <button className='button-motion-2' onClick={handleStep} >{textButton}</button>
+        }
         
         <button className='btn2-motion2' onClick={handleShowTranscription}>Transcription écrite</button> 
+      </div>  
+
 {showTranscription ? "" :
         <p className='text-motion2' > <strong>Bonjour chère camarade !</strong> <br/>
 

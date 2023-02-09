@@ -4,8 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 #root {
@@ -14,6 +13,7 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -25,15 +25,15 @@ code {
   align-items: center;
   justify-content: center;
   height: 100%;
-
 }
 
 .actions {
   position: fixed;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%);
   bottom: 50px;
 }
+
 @media (max-width: 992px) {
   button{
     font-size: 14pt;
@@ -49,21 +49,19 @@ code {
   }
 
   h1{
-    margin-top: 15%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
+
   p{
     padding: 1em;
     line-height: 25px;
   }
+
   h1 {
     margin-top: 41%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin-left: 1em;
-    padding-right: 2em;
-    
   }
 
 
@@ -86,7 +84,7 @@ code {
     padding-right: 2em;
     margin-block-start: -2em !important;
     margin-block-end: -3em !important;
-}
+  }
 
   .btn-quiz{
     font-size: 14pt;
@@ -103,11 +101,12 @@ code {
   }
 
   .button-motion-1{
-    margin-top: 55%;
+    margin-left: 45px;
   }
 
+
   .img-bg-1{
-    margin-top: 15%;
+    margin-bottom: 200px;
   }
 
   .img-bg-2{
@@ -122,31 +121,37 @@ code {
     width: 56%;
     margin-left: 172px;
   }
+
   .h1-motion2{
     margin-top: -13% !important;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-left: 1em;
-    padding-right: 2em;
+
     -webkit-text-stroke: 1px white;
   }
+
   .btn2-motion2 {
     margin-bottom: 7px;
     margin-top: 7% !important;
-}
+  }
 
   .text-motion2 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 91px;
-}
+  }
 
+  .h1-quiz{
+    margin-left: 1em;
+    padding-right: 1em;
+  }
 
   svg{
     position: absolute;
     z-index: -2; 
   }
 }
-  
+
 
 

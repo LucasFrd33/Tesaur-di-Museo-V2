@@ -15,12 +15,15 @@ import Resume2 from './components/Resume2';
 import Answer3 from './components/Answer3';
 import Award3 from './components/Award3';
 import Finish from './components/Finish';
+import Popup from './components/popup';
 
 
 function App(){
     const [stepSetup, setStepSetup] = useState(0);
 
     const stepPage = [
+
+
       {
         step:
         <Intro
@@ -30,6 +33,7 @@ function App(){
         title={<h1 className='titre'>Tesaur</h1>}
         />
       },
+      
       {
         step:
         <Motion1 
