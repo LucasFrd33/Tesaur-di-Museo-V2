@@ -8,17 +8,11 @@ import 'reactjs-popup/dist/index.css';
 
 function Motion1({ handleStep, textButton, image }) {
 
-  const [showTranscription, setShowTranscription] = useState(true);
   const [show, setShow] = useState(true)
 
   setTimeout(() => {
     setShow(false)
   }, 5000)
-
-  function handleShowTranscription() {
-    const show = showTranscription
-    setShowTranscription(!show)
-  }
 
   const defaultOptions = {
     loop: false,

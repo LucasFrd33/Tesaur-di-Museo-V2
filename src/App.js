@@ -176,6 +176,7 @@ function App(){
         title={<h1>Résumé du 3ème jeu :</h1>}
         text={<p>Observe bien le tableau de Willem Van Hasselt et sa reproduction ci-dessous ! 
           Sauras tu trouver le nombre de différences entre ces deux œuvres ? Celui-ci te donnera le dernier chiffre du cadenas. </p>}
+        tableau={<img alt='tableau de Willem Van Hasselt ' src='./img/Tableau.png'/>}
         />
         // Mettre l'image a agrandir
       },
