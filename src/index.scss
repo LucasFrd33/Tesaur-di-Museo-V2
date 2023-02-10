@@ -43,7 +43,6 @@ code {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 1.5%;
-    margin-top: 15%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
@@ -59,7 +58,6 @@ code {
   }
 
   h1 {
-    margin-top: 41%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
@@ -68,22 +66,16 @@ code {
 
   .img-quiz-1 {
     position: static;
-    margin-top: -110% !important;
     width: 16% !important;
-    margin-left: 94% !important;
     z-index: -1 !important;
   }
   .img-quiz-2{
-    margin-top: 23% !important;
     width: 45% !important;
-    margin-right: 55% !important;
   }
   
   .text-quiz {
     padding: 1em;
     padding-right: 2em;
-    margin-block-start: -2em !important;
-    margin-block-end: -3em !important;
   }
 
   .btn-quiz{
@@ -94,23 +86,19 @@ code {
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 1.5%;
-    margin-top: 15%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-right: 234px;
   }
 
   .button-motion-1{
-    margin-left: 45px;
   }
 
   .button-motion-2{
-    margin-left: 45px;
   }
 
 
   .img-bg-1{
-    margin-bottom: 200px;
   }
 
   .img-bg-2{
@@ -123,36 +111,29 @@ code {
 
   .img-motion2{ 
     position: static;
-    margin-top: -110% !important;
     width: 16% !important;
-    margin-left: 94% !important;
     z-index: -1 !important;
   }
   
 
   .h1-motion2{
-    margin-top: -13% !important;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    margin-left: 1em;
     position: absolute;
 
     -webkit-text-stroke: 1px white;
   }
 
   .btn2-motion2 {
-    margin-bottom: 7px;
-    margin-top: 7% !important;
+
   }
 
   .text-motion2 {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 91px;
   }
 
   .h1-quiz{
-    margin-left: 1em;
     padding-right: 1em;
   }
 
