@@ -217,6 +217,8 @@ function App(){
         />,
       },
       //RAJOUTER UNE FIN
+
+      //TEST
     ]
     function handleStep(i){
       const set = i
