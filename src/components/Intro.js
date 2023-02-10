@@ -23,6 +23,7 @@ function Intro({text, textButton, image, handleStep, title}) {
         className="lottieIntro"
         options={defaultOptions}
       />
+      {image}
 </>
   );
 }

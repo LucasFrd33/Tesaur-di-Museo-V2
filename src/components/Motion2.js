@@ -52,6 +52,7 @@ function Motion2({handleStep,textButton, image}) {
         onComplete={() => setShow(false)}
        
       />
+      {image}
     </>
     );
   }
