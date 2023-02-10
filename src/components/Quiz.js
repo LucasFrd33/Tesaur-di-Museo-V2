@@ -21,14 +21,14 @@ function Quiz({text, textButton, handleStep, title, image}) {
     // ];
 
   return (
-    <div className="container">
-      
+    <>
+    <div className="container-quiz">
       {title}
       <p>{text}</p>
-      <button className="btn-quiz" onClick={handleStep} >{textButton}</button>
-      {image}
+      <button onClick={handleStep} >{textButton}</button>
     </div>
-    
+      {image}
+    </>
   );
 }
 
