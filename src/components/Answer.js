@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function Answer({handleStep,textButton}) {
+function Answer({handleStep,textButton, image}) {
   const [showButton, setShowButton] = useState(true);
 
   function handleChange(e){
@@ -11,8 +11,9 @@ function Answer({handleStep,textButton}) {
     }
   }
     return (
+      <>
       <div className="container-answer">
-        <h1>Quel est le numéro présent dans le titre de ce tableau ?</h1>
+        <h1 className='h1-answer1'>Quel est le numéro présent dans le titre de ce tableau ?</h1>
         <select name="fruit" onChange={handleChange}>
           <option value ="none">3</option>
           <option value ="none">5</option>
@@ -26,6 +27,8 @@ function Answer({handleStep,textButton}) {
           showButton ? "" :  <button onClick={handleStep} >{textButton}</button>
         }
       </div>
+      {image}
+      </>
     );
   }
   

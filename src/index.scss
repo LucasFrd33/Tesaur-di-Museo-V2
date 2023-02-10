@@ -140,6 +140,8 @@ code {
   top: 40px;
 }
 
+
+
 .img-resume1{
   width: 149px;
   }
@@ -147,6 +149,32 @@ code {
     position: absolute;
     top: 20%;
     z-index: -1;
+  }
+
+  .h1-motion, .h1-resume1, .h1-resume2, .h1-resume3, .h1-answer1, .h1-anward1{
+    -webkit-text-stroke: 1px white;
+  }
+
+  select {
+    padding: 10px;
+    font-size: 29px;
+    color: black;
+    text-align: center;
+    border: 2px solid #56b4bd;
+    border-radius: 6px;
+}
+
+  .text-quiz{
+    padding-right: 2em;
+}
+  .h1-award2{
+    padding-right: 1em;
+  }
+  span{
+    color: #56b4bd !important;
+  }
+  .text-transition1, .text-transition2{
+    padding-right: 2em;
   }
 
   .lottieIntro{

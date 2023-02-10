@@ -13,7 +13,7 @@ function Answer3({handleStep,textButton, image}) {
     return (
       <>
       <div className="container-answer">
-        <h1>Quel est le nombre de différence entre l’œuvre originale et sa reproduction</h1>
+        <h1>Quel est le nombre de différences  entre l’œuvre originale et sa reproduction</h1>
         <select name="fruit" onChange={handleChange}>
           <option value ="none">5</option>
           <option value ="none">1</option>
