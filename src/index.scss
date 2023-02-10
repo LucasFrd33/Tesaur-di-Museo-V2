@@ -156,8 +156,13 @@ code {
     line-height: 25px;
   }
 
-  popup {
-    position: fixed;
+  .popup-content {
+    background: #7e7e7e;
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    border: 1px solid #d7d7d7;
+    overflow: scroll;
   }
 
   svg {
