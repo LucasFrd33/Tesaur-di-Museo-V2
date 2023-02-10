@@ -27,7 +27,7 @@ function Motion3({handleStep,textButton}) {
   };
     return (
       <div className="container">
-        <h1>Commençons le 2ème jeu !</h1>
+        <h1 className='h1-motion'>Commençons le 2ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
           height={600}
@@ -36,7 +36,7 @@ function Motion3({handleStep,textButton}) {
         />
       {
         show ? "" : 
-        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
+        <button className='button-motion' onClick={handleStep} >{textButton}</button>
       }
         
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
