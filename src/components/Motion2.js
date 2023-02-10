@@ -1,7 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
-import v1 from "../V1-tbl1.json";
+import v1 from "../V1-tbl2.json";
+import AudioSimple from './Audio';
 
 function Motion2({handleStep,textButton, image}) {
 
@@ -16,6 +17,7 @@ function Motion2({handleStep,textButton, image}) {
     const show = showTranscription
     setShowTranscription(!show)
   }
+  
 
   const defaultOptions = {
     loop: false,
@@ -28,6 +30,7 @@ function Motion2({handleStep,textButton, image}) {
     return (
       <>
       <div className="container-motion">
+      <AudioSimple path="./img/maxence_voix.mp3"></AudioSimple>
         <h1 className='h1-motion' >Commençons par le 1er jeu !</h1>
       <div className="actions">
         {
