@@ -4,7 +4,7 @@ function Award2({handleStep,textButton, image}) {
 
     return (
       <>
-      <div className="container">
+      <div className="container-award">
         <h1>Félicitation !
 tu a bien trouvé le bon numéro.
 

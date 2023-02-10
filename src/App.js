@@ -29,7 +29,6 @@ function App(){
         handleStep={()=>handleStep(1)}
         textButton="Commencer"
         title={<h1 className='titre'>Tesaur</h1>}
-        image={<img className="img-bg-1" src="./img/image1.webp" alt="tt" />}
         />
       },
       {
@@ -93,6 +92,7 @@ function App(){
         title={<h1>Tu as un petit message 
           d’Albert Marquet :</h1>}
         text={<p>Je te complimente d’avoir trouver le bon numéro !<br/>
+        <br/>
         Tu vas bientôt faire la connaissance d’un personnage que j’ai peint dans une de mes autres œuvres ! <br/>
         Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>J’étais heureux de rencontrer !</p>}
         image={<img className='img-transition' src='./img/group-122.webp' alt='tt'/>}
@@ -190,6 +190,7 @@ function App(){
         title={<h1>Résumé du 3ème jeu :</h1>}
         text={<p>Observe bien le tableau de Willem Van Hasselt et sa reproduction ci-dessous ! 
           Sauras tu trouver le nombre de différences entre ces deux œuvres ? Celui-ci te donnera le dernier chiffre du cadenas. </p>}
+        tableau={<img alt='tableau de Willem Van Hasselt ' src='./img/Tableau.png'/>}
         />
         // Mettre l'image a agrandir
       },

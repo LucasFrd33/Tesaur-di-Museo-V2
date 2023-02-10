@@ -11,7 +11,7 @@ function Answer2({handleStep,textButton}) {
     }
   }
     return (
-      <div className="container">
+      <div className="container-answer">
         <h1>Quel est le numéro que l’homme au chapeau melon t’as donné ?</h1>
         <select name="fruit" onChange={handleChange}>
           <option value ="none">3</option>

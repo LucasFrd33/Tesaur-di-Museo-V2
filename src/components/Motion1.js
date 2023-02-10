@@ -8,13 +8,11 @@ import 'reactjs-popup/dist/index.css';
 
 function Motion1({ handleStep, textButton, image }) {
 
-  
   const [show, setShow] = useState(true)
 
   setTimeout(() => {
     setShow(false)
   }, 5000)
-
 
   const defaultOptions = {
     loop: false,
@@ -26,12 +24,11 @@ function Motion1({ handleStep, textButton, image }) {
   };
   return (
     <>
-    <div className="container">
+    <div className="container-motion">
       <Lottie
         options={defaultOptions}
         onComplete={() => setShow(false)}
       />
-     
 
       <div className="actions">
         {

@@ -27,19 +27,18 @@ function Motion3({handleStep,textButton, image}) {
   };
     return (
       <>
-      <div className="container">
+      <div className="container-motion">
         <h1 className='h1-motion'>Commençons le 2ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
-          height={600}
-          width={390}
           onComplete={() => setShow(false)}
         />
+      <div className="actions">
       {
         show ? "" : 
         <button className='button-motion' onClick={handleStep} >{textButton}</button>
       }
-        
+      
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
 {showTranscription ? "" :
         <p> (François Mauriac)	- Viens me voir ! Je suis François Mauriac, le buste avec un style <br/>
@@ -62,6 +61,7 @@ function Motion3({handleStep,textButton, image}) {
       Vas nous voir, que ce soit André Lhote, François Mauriac et moi même. Tu obtiendras de chacun de nous, un chiffre, qu’il faudra additionner. Cela te donnera le premier élément du cadenas !
       </p>
 }
+</div>
       </div>
       {image}
       </>

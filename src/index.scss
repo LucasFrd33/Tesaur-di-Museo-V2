@@ -4,6 +4,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
 }
 
 #root {
@@ -28,35 +29,130 @@ code {
 
 .actions {
   display: flex;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 50px;
-  justify-content: space-between;
   flex-direction: column;
+  height: 150px;
+  justify-content: space-around;
   align-items: center;
 }
 
 @media (max-width: 992px) {
+
+  .container-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    .actions{
+       margin-bottom: 1em;
+    }
+  }
+  .container-motion{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0em 3em;
+    .actions{
+      margin-bottom: 2em;
+   }
+  }
+  .container-answer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0em 3em;
+    align-items: center;
+  }
+.h1-motion{
+  margin-top: 2em;
+}
+  .container-quiz{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0em 3em;
+    .actions{
+      margin-bottom: 3em;
+   }
+  }
+  .container-resume{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0em 3em;
+    .action{
+      margin-bottom: 3em;
+   }
+  }
+
+  .container-award{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0em 3em;
+  }
+
+  .container-transition{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0em 3em;
+    p{
+      font-size: 25px;
+    }
+    h1{
+      font-size: 16px;
+    }
+  }
+
+  .container-finish{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0em 3em;
+    align-items: center;
+    justify-content: space-evenly;
+    .code{
+      display: flex;
+    }
+  }
+
+  .img-bg-1{
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+  }
+
+  .lottieIntro{
+    position: absolute;
+    top: 0;
+  }
+
   button {
     font-size: 14pt;
     background-color: white;
     border: solid 3.5px black;
-    padding-top: 1.5%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 1.5%;
+    padding: 0.5em 0.6em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
 
-  h1 {
+  h1, p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
 
   p {
-    padding: 1em;
     line-height: 25px;
   }
 
@@ -66,6 +162,8 @@ code {
 
   svg {
     position: absolute;
-    z-index: -2;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 }
