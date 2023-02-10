@@ -11,7 +11,7 @@ function Answer({handleStep,textButton}) {
     }
   }
     return (
-      <div className="container">
+      <div className="container-answer">
         <h1>Quel est le numéro présent dans le titre de ce tableau ?</h1>
         <select name="fruit" onChange={handleChange}>
           <option value ="none">3</option>

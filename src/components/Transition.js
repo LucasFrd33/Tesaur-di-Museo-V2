@@ -2,7 +2,7 @@
 
 function Transition({handleStep,textButton, title, text}) {
     return (
-      <div className="container">
+      <div className="container-transition">
         {title}
         {text}
          <button onClick={handleStep} >{textButton}</button>

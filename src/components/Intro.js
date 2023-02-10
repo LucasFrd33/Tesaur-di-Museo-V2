@@ -4,10 +4,10 @@ function Intro({text, textButton, image, handleStep, title}) {
 
   return (
   <>
-    <div className="container">
+    <div className="container-intro">
       {title}
       <div className="actions">
-        <button className="button" onClick={handleStep} >{textButton}</button>
+        <button className="button-intro" onClick={handleStep} >{textButton}</button>
       </div>
     </div>
       {image}

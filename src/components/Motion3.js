@@ -26,7 +26,7 @@ function Motion3({handleStep,textButton}) {
     },
   };
     return (
-      <div className="container">
+      <div className="container-motion">
         <h1 className='h1-motion'>Commençons le 2ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}

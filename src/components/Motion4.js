@@ -26,8 +26,8 @@ function Motion4({handleStep,textButton}) {
     },
   };
     return (
-      <div className="container">
-        <h1>Commençons le 3ème jeu !</h1>
+      <div className="container-motion">
+        <h1 className='h1-motion'>Commençons le 3ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
           height={600}
@@ -36,7 +36,7 @@ function Motion4({handleStep,textButton}) {
         />
       {
         show ? "" : 
-        <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
+        <button className='button-motion' onClick={handleStep} >{textButton}</button>
       }
         
         <button onClick={handleShowTranscription}>Transcription écrite</button> 

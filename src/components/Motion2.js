@@ -26,8 +26,8 @@ function Motion2({handleStep,textButton}) {
     },
   };
     return (
-      <div className="container">
-        <h1 className='h1-motion2' >Commençons par le 1er jeu !</h1>
+      <div className="container-motion">
+        <h1 className='h1-motion' >Commençons par le 1er jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
           height={600}
@@ -38,13 +38,13 @@ function Motion2({handleStep,textButton}) {
       <div className="actions">
         {
         show ? "" : 
-          <button className='button-motion-2' onClick={handleStep} >{textButton}</button>
+          <button className='button-motion' onClick={handleStep} >{textButton}</button>
         }
         <button onClick={handleShowTranscription}>Transcription écrite</button> 
       </div>  
 
 {showTranscription ? "" :
-        <p className='text-motion2' > <strong>Bonjour chère camarade !</strong> <br/>
+        <p className='text-motion' > <strong>Bonjour chère camarade !</strong> <br/>
 
          Je vais t’aider à trouver la combinaison du cadenas verrouillant le fameux coffre. <br/>
 

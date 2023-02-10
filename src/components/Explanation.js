@@ -37,7 +37,7 @@ function Explanation({text, textButton, image, handleStep, transcriptionText, ti
   }
 
   return (
-    <div className="container">
+    <div className="container-explanation">
       {title}
       <p>{text}</p>
       <img src={image} alt="motion"></img>
