@@ -5,7 +5,7 @@ function Answer3({handleStep,textButton}) {
 
   function handleChange(e){
     const t = e.target.value
-    if(t === "9"){
+    if(t === "3"){
       const show = showButton
       setShowButton(!show)
     }
@@ -14,11 +14,11 @@ function Answer3({handleStep,textButton}) {
       <div className="container">
         <h1>Quel est le nombre de différence entre l’œuvre originale et sa reproduction</h1>
         <select name="fruit" onChange={handleChange}>
-          <option value ="none">3</option>
+          <option value ="3">3</option>
           <option value ="none">5</option>
           <option value ="none">1</option>
           <option value ="none">8</option>
-          <option value ="9">9</option>
+          <option value ="none">9</option>
           <option value ="none">7</option>
           <option value ="none">2</option>
         </select> 

@@ -18,9 +18,9 @@ function Answer2({handleStep,textButton}) {
           <option value ="none">5</option>
           <option value ="none">1</option>
           <option value ="none">8</option>
-          <option value ="2">2</option>
           <option value ="none">7</option>
           <option value ="none">9</option>
+          <option value ="2">2</option>
         </select> 
         {
           showButton ? "" :  <button onClick={handleStep} >{textButton}</button>
