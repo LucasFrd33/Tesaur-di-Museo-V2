@@ -16,9 +16,9 @@ function Answer({handleStep,textButton}) {
         <select name="fruit" onChange={handleChange}>
           <option value ="none">3</option>
           <option value ="none">5</option>
+          <option value ="9">9</option>
           <option value ="none">1</option>
           <option value ="none">8</option>
-          <option value ="9">9</option>
           <option value ="none">7</option>
           <option value ="none">2</option>
         </select> 
