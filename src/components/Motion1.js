@@ -29,7 +29,7 @@ function Motion1({ handleStep, textButton, image }) {
         options={defaultOptions}
         onComplete={() => setShow(false)}
       />
-
+      
       <div className="actions">
         {
           show ? "" :

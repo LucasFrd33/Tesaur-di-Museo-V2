@@ -1,6 +1,6 @@
 // import { useState } from "react";
 
-function Resume2({handleStep,textButton, title, text, tableau}) {
+function Resume2({handleStep,textButton, title, text, tableau, image, image2}) {
     return (
       <>
       <div className="container-resume">
