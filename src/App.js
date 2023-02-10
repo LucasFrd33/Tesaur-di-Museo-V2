@@ -43,8 +43,8 @@ function App(){
 
       {
         step: <Quiz 
-        title={<h1 className='h1-quiz'>Commençons le 1er jeu !</h1>}
-        text={<p className='text-quiz'>Rendez-vous dans la salle : Les années 1910-1940 : du cubisme au retour à l’ordre.</p>}
+        title={<h1 className='h1-quiz'>Commençons le <span>1er</span> jeu !</h1>}
+        text={<p className='text-quiz'>Rendez-vous dans la salle : "Les années <span>1910-1940</span> : du cubisme au retour à l’ordre."</p>}
         textButton="Jouer"
         image={<img className='img-quiz' src='./img/group-122.webp' alt='tt'/>}
         handleStep={()=>handleStep(3)}
@@ -62,9 +62,10 @@ function App(){
         step:
         <Resume 
         handleStep={()=>handleStep(5)}
+        image={<img className='img-resume1' src='./img/img-resume1.webp' alt='tt'/>}
         textButton="Suivant"
-        title={<h1>Résumé du 1er jeu </h1>}
-        text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
+        title={<h1 className='h1-resume1'>Résumé du <span>1er</span> jeu </h1>}
+        text={<p>Rends toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
 
           Cela te donnera le 1er numéro du cadenas.</p>}
           
@@ -74,13 +75,14 @@ function App(){
         step:
         <Answer
         handleStep={()=>handleStep(6)}
-        image={<img className='img-resume1' src='./img/img-resume1.webp' alt='tt'/>}
+        image={<img className='img-motion2' src='./img/image2.webp' alt='tt'/>}
         textButton="Suivant"
         />,
       },
       {
         step:
         <Award
+        image={<img className='img-motion2' src='./img/image2.webp' alt='tt'/>}
         handleStep={()=>handleStep(7)}
         textButton="Suivant"
         />
@@ -91,10 +93,10 @@ function App(){
         <Transition
         title={<h1>Tu as un petit message 
           d’Albert Marquet :</h1>}
-        text={<p>Je te complimente d’avoir trouver le bon numéro !<br/>
+        text={<p className='text-transition1'>Je te complimente d’avoir trouver le bon numéro !<br/>
         <br/>
         Tu vas bientôt faire la connaissance d’un personnage que j’ai peint dans une de mes autres œuvres ! <br/>
-        Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>J’étais heureux de rencontrer !</p>}
+        Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>J’étais heureux de te rencontrer !</p>}
         image={<img className='img-transition' src='./img/group-122.webp' alt='tt'/>}
         handleStep={()=>handleStep(8)}
         textButton="Suivant"
@@ -104,7 +106,7 @@ function App(){
       // Deuxieme jeu
       {
         step: <Quiz 
-        title={<h1>Pour ce 2ème jeu, 
+        title={<h1>Pour ce <span>2ème</span> jeu, 
           il va falloir lever les yeux du téléphone.</h1>}
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
         textButton="Jouer"
@@ -125,10 +127,12 @@ function App(){
         <Resume2 
         handleStep={()=>handleStep(11)}
         textButton="Suivant"
-        title={<h1>Résumé du 2eme jeu </h1>}
-        text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
-
-          Cela te donnera le 1er numéro du cadenas.</p>}
+        title={<h1 className='h1-resume2'>Résumé du <span>2eme </span>jeu </h1>}
+        text={<p>Viens à ma rencontre ! <br/>
+        Je suis l’homme au <span>chapeau melon</span> se trouvant dans la même salle que la tienne ! <br/>
+        <br/>
+          Révèle-moi le nom du tableau d’où je viens. <br/>
+          Ainsi, je pourrais te transmettre le <span>2nd </span>chiffre du cadenas.</p>}
           image2={<img className="img-resume2" src="./img/img-resume2.webp" alt="tt" />}
         />
       },
@@ -137,6 +141,7 @@ function App(){
       {
         step:
         <Answer2
+
         handleStep={()=>handleStep(12)}
         image={<img className="img-answer2" src="./img/img-resume2.webp" alt="tt" />}
         textButton="Suivant"
@@ -155,7 +160,7 @@ function App(){
         step:
         <Transition
         title={<h1>L’homme au chapeau melon a un message pour toi : </h1>}
-        text={<p>Bravo, tu touches bientôt au but ! <br/>
+        text={<p className='text-transition2'>Bravo, tu touches bientôt au but ! <br/>
        Je te confie à la femme allongée de Joseph Rivière.<br/>
        Elle te guidera pour découvrir le dernier numéro du cadenas. <br/>A bientôt !</p>}
        image={<img className="img-transition" src="./img/img-quiz2.webp" alt="tt" />}
@@ -165,7 +170,7 @@ function App(){
       },
       {
         step: <Quiz 
-        title={<h1>Pour ce 3ème jeu, 
+        title={<h1>Pour ce <span>3ème</span> jeu, 
           il va falloir lever les yeux du téléphone.</h1>}
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
         image={<img className="img-quiz3" src="./img/img-quiz3.webp" alt="tt" />}
@@ -187,7 +192,7 @@ function App(){
         image2={<img className="img-resume3" src="./img/img-motion4.webp" alt="tt" />}
         handleStep={()=>handleStep(17)}
         textButton="Suivant"
-        title={<h1>Résumé du 3ème jeu :</h1>}
+        title={<h1 className='h1-resume3'>Résumé du <span>3ème</span> jeu :</h1>}
         text={<p>Observe bien le tableau de Willem Van Hasselt et sa reproduction ci-dessous ! 
           Sauras tu trouver le nombre de différences entre ces deux œuvres ? Celui-ci te donnera le dernier chiffre du cadenas. </p>}
         tableau={<img alt='tableau de Willem Van Hasselt ' src='./img/Tableau.png'/>}
