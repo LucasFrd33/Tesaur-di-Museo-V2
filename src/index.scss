@@ -1,10 +1,9 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -19,11 +18,11 @@ code {
     monospace;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -36,11 +35,10 @@ code {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  height: 20%;
 }
 
 @media (max-width: 992px) {
-  button{
+  button {
     font-size: 14pt;
     background-color: white;
     border: solid 3.5px black;
@@ -52,101 +50,22 @@ code {
     font-weight: 500;
   }
 
-  h1{
+  h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
   }
 
-  p{
+  p {
     padding: 1em;
     line-height: 25px;
   }
 
-  h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+  popup {
+    position: fixed;
   }
 
-
-
-  .img-quiz-1 {
-    position: static;
-    width: 16% !important;
-    z-index: -1 !important;
-  }
-  .img-quiz-2{
-    width: 45% !important;
-  }
-  
-  .text-quiz {
-    padding: 1em;
-    padding-right: 2em;
-  }
-
-  .btn-quiz{
-    font-size: 14pt;
-    background-color: white;
-    border: solid 3.5px black;
-    padding-top: 1.5%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 1.5%;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    margin-right: 234px;
-  }
-
-  .button-motion-1{
-  }
-
-  .button-motion-2{
-  }
-
-
-  .img-bg-1{
-  }
-
-  .img-bg-2{
+  svg {
     position: absolute;
-    width: 347.65px;
-    height: 252.84px;
-    left: 170px;
-    top: -41.54px;
-  }
-
-  .img-motion2{ 
-    position: static;
-    width: 16% !important;
-    z-index: -1 !important;
-  }
-  
-
-  .h1-motion2{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    position: absolute;
-
-    -webkit-text-stroke: 1px white;
-  }
-
-  .btn2-motion2 {
-
-  }
-
-  .text-motion2 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .h1-quiz{
-    padding-right: 1em;
-  }
-
-  svg{
-    position: absolute;
-    z-index: -2; 
+    z-index: -2;
   }
 }
-
-
-

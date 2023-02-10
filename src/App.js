@@ -29,6 +29,7 @@ function App(){
         handleStep={()=>handleStep(1)}
         textButton="Commencer"
         title={<h1 className='titre'>Tesaur</h1>}
+        image={<img className="img-bg-1" src="./img/image1.webp" alt="tt" />}
         />
       },
       {

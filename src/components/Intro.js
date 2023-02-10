@@ -10,7 +10,7 @@ function Intro({text, textButton, image, handleStep, title}) {
         <button className="button" onClick={handleStep} >{textButton}</button>
       </div>
     </div>
-      <img className="img-bg-1" src="./img/image1.webp" alt="tt" />
+      {image}
 </>
   );
 }
