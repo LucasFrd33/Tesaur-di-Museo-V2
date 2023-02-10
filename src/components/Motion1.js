@@ -8,17 +8,13 @@ import 'reactjs-popup/dist/index.css';
 
 function Motion1({ handleStep, textButton, image }) {
 
-  const [showTranscription, setShowTranscription] = useState(true);
+  
   const [show, setShow] = useState(true)
 
   setTimeout(() => {
     setShow(false)
   }, 5000)
 
-  function handleShowTranscription() {
-    const show = showTranscription
-    setShowTranscription(!show)
-  }
 
   const defaultOptions = {
     loop: false,
@@ -35,7 +31,7 @@ function Motion1({ handleStep, textButton, image }) {
         options={defaultOptions}
         onComplete={() => setShow(false)}
       />
-      <img className='img-bg-2' src="./img/image2.webp" alt="tt" />
+     
 
       <div className="actions">
         {

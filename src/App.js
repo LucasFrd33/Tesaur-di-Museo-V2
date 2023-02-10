@@ -36,6 +36,7 @@ function App(){
         step:
         <Motion1 
         handleStep={()=>handleStep(2)}
+        image={<img className='img-motion1' src="./img/image2.webp" alt="tt" />}
         textButton="Suivant"
         />
       },
@@ -46,6 +47,7 @@ function App(){
         title={<h1 className='h1-quiz'>Commençons le 1er jeu !</h1>}
         text={<p className='text-quiz'>Rendez-vous dans la salle : Les années 1910-1940 : du cubisme au retour à l’ordre.</p>}
         textButton="Jouer"
+        image={<img className='img-quiz' src='./img/group-122.webp' alt='tt'/>}
         handleStep={()=>handleStep(3)}
         />
       },
@@ -53,6 +55,7 @@ function App(){
         step:
         <Motion2
         handleStep={()=>handleStep(4)}
+        image={<img className='img-motion2' src='./img/image2.webp' alt='tt'/>}
         textButton="Suivant"
         />
       },
@@ -65,12 +68,14 @@ function App(){
         text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
 
           Cela te donnera le 1er numéro du cadenas.</p>}
+          
         />
       },
       {
         step:
         <Answer
         handleStep={()=>handleStep(6)}
+        image={<img className='img-resume1' src='./img/img-resume1.webp' alt='tt'/>}
         textButton="Suivant"
         />,
       },
@@ -90,6 +95,7 @@ function App(){
         text={<p>Je te complimente d’avoir trouver le bon numéro !<br/>
         Tu vas bientôt faire la connaissance d’un personnage que j’ai peint dans une de mes autres œuvres ! <br/>
         Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>J’étais heureux de rencontrer !</p>}
+        image={<img className='img-transition' src='./img/group-122.webp' alt='tt'/>}
         handleStep={()=>handleStep(8)}
         textButton="Suivant"
         />
@@ -103,25 +109,27 @@ function App(){
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
         textButton="Jouer"
         handleStep={()=>handleStep(9)}
-        image={<img className="img-quiz-1" src="./img/group-122.webp" alt="tt" />}
+        image={<img className="img-quiz2" src="./img/img-quiz2.webp" alt="tt" />}
         />
       },
       {
         step:
         <Motion3
         handleStep={()=>handleStep(10)}
+        image={<img className="img-motion3" src="./img/img-motion3.webp" alt="tt" />}
         textButton="Suivant"
         />
       },
       {
         step:
-        <Resume 
+        <Resume2 
         handleStep={()=>handleStep(11)}
         textButton="Suivant"
-        title={<h1>Résumé du 2ieme jeu </h1>}
+        title={<h1>Résumé du 2eme jeu </h1>}
         text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>
 
           Cela te donnera le 1er numéro du cadenas.</p>}
+          image2={<img className="img-resume2" src="./img/img-resume2.webp" alt="tt" />}
         />
       },
 
@@ -130,6 +138,7 @@ function App(){
         step:
         <Answer2
         handleStep={()=>handleStep(12)}
+        image={<img className="img-answer2" src="./img/img-resume2.webp" alt="tt" />}
         textButton="Suivant"
         />,
       },
@@ -137,6 +146,7 @@ function App(){
       {
         step:
         <Award2
+        image={<img className="img-award2" src="./img/img-quiz2.webp" alt="tt" />}
         handleStep={()=>handleStep(13)}
         textButton="Suivant"
         />,
@@ -148,6 +158,7 @@ function App(){
         text={<p>Bravo, tu touches bientôt au but ! <br/>
        Je te confie à la femme allongée de Joseph Rivière.<br/>
        Elle te guidera pour découvrir le dernier numéro du cadenas. <br/>A bientôt !</p>}
+       image={<img className="img-transition" src="./img/img-quiz2.webp" alt="tt" />}
         handleStep={()=>handleStep(14)}
         textButton="Suivant"
         />
@@ -157,6 +168,7 @@ function App(){
         title={<h1>Pour ce 3ème jeu, 
           il va falloir lever les yeux du téléphone.</h1>}
         text={<p>Et être attentif à l’environnement autour de toi !</p>}
+        image={<img className="img-quiz3" src="./img/img-quiz3.webp" alt="tt" />}
         textButton="Jouer"
         handleStep={()=>handleStep(15)}
         />
@@ -164,6 +176,7 @@ function App(){
       {
         step:
         <Motion4
+        image={<img className="img-motion4" src="./img/img-motion4.webp" alt="tt" />}
         handleStep={()=>handleStep(16)}
         textButton="Suivant"
         />
@@ -171,6 +184,7 @@ function App(){
       {
         step:
         <Resume2
+        image2={<img className="img-resume3" src="./img/img-motion4.webp" alt="tt" />}
         handleStep={()=>handleStep(17)}
         textButton="Suivant"
         title={<h1>Résumé du 3ème jeu :</h1>}
@@ -182,6 +196,7 @@ function App(){
       {
         step:
         <Answer3
+        image={<img className="img-answer3" src="./img/img-motion4.webp" alt="tt" />}
         handleStep={()=>handleStep(18)}
         textButton="Suivant"
         />,

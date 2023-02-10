@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function Answer3({handleStep,textButton}) {
+function Answer3({handleStep,textButton, image}) {
   const [showButton, setShowButton] = useState(true);
 
   function handleChange(e){
@@ -11,6 +11,7 @@ function Answer3({handleStep,textButton}) {
     }
   }
     return (
+      <>
       <div className="container">
         <h1>Quel est le nombre de différence entre l’œuvre originale et sa reproduction</h1>
         <select name="fruit" onChange={handleChange}>
@@ -26,6 +27,8 @@ function Answer3({handleStep,textButton}) {
           showButton ? "" :  <button onClick={handleStep} >{textButton}</button>
         }
       </div>
+      {image}
+      </>
     );
   }
   

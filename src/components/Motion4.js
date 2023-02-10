@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Lottie from 'react-lottie';
 import v1 from "../V1-tbl3.json";
 
-function Motion4({handleStep,textButton}) {
+function Motion4({handleStep,textButton, image}) {
 
   const [showTranscription, setShowTranscription] = useState(true);
   const [show, setShow] = useState(true)
@@ -26,6 +26,7 @@ function Motion4({handleStep,textButton}) {
     },
   };
     return (
+      <>
       <div className="container">
         <h1>Commençons le 3ème jeu !</h1>
         <Lottie 
@@ -62,6 +63,8 @@ function Motion4({handleStep,textButton}) {
       </p>
 }
       </div>
+      {image}
+      </>
     );
   }
   
