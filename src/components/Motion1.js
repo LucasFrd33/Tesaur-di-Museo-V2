@@ -32,6 +32,8 @@ function Motion1({handleStep,textButton}) {
 	        options={defaultOptions}
           onComplete={() => setShow(false)}
         />
+         <audio
+        src="./img/maxence_voix"/>
       <img className='img-bg-2' src="./img/image2.webp" alt="tt" />
 
       <div className="actions">
