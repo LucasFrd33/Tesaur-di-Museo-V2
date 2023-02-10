@@ -2,7 +2,7 @@
 
 function Resume2({handleStep,textButton, title, text, tableau}) {
     return (
-      <div className="container">
+      <div className="container-resume">
         {title}
         {text}
         {tableau}

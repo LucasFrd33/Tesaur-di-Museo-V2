@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
-import v1 from "../V1.json";
+import v1 from "../V1-tbl1.json";
 
 function Motion2({handleStep,textButton}) {
 
@@ -26,15 +26,9 @@ function Motion2({handleStep,textButton}) {
     },
   };
     return (
+      <>
       <div className="container-motion">
         <h1 className='h1-motion' >Commençons par le 1er jeu !</h1>
-        <Lottie 
-	        options={defaultOptions}
-          height={600}
-          width={390}
-          onComplete={() => setShow(false)}
-         
-        />
       <div className="actions">
         {
         show ? "" : 
@@ -53,6 +47,12 @@ function Motion2({handleStep,textButton}) {
       </p>
 }
       </div>
+        <Lottie 
+        options={defaultOptions}
+        onComplete={() => setShow(false)}
+       
+      />
+    </>
     );
   }
   

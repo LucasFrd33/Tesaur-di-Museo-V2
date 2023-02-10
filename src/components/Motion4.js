@@ -30,10 +30,10 @@ function Motion4({handleStep,textButton}) {
         <h1 className='h1-motion'>Commençons le 3ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
-          height={600}
-          width={390}
           onComplete={() => setShow(false)}
         />
+      <div className="actions">
+
       {
         show ? "" : 
         <button className='button-motion' onClick={handleStep} >{textButton}</button>
@@ -60,7 +60,7 @@ function Motion4({handleStep,textButton}) {
       notre spécialiste en cubisme André Lhote !<br/>
       Vas nous voir, que ce soit André Lhote, François Mauriac et moi même. Tu obtiendras de chacun de nous, un chiffre, qu’il faudra additionner. Cela te donnera le premier élément du cadenas !
       </p>
-}
+}</div>
       </div>
     );
   }

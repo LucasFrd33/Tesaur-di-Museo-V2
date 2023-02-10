@@ -7,7 +7,7 @@ function Award3({handleStep,textButton}) {
         <h1>Félicitation !
 tu a bien trouvé le bon numéro.
 
-Retiens bien le numéro 8 .</h1>
+Retiens bien le numéro 3 .</h1>
         <button className="button" onClick={handleStep} >{textButton}</button>
       </div>
     );

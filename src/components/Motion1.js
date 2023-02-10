@@ -24,12 +24,11 @@ function Motion1({ handleStep, textButton, image }) {
   };
   return (
     <>
-    <div className="container">
+    <div className="container-motion">
       <Lottie
         options={defaultOptions}
         onComplete={() => setShow(false)}
       />
-      <img className='img-bg-2' src="./img/image2.webp" alt="tt" />
 
       <div className="actions">
         {

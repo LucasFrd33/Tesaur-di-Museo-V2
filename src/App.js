@@ -29,7 +29,6 @@ function App(){
         handleStep={()=>handleStep(1)}
         textButton="Commencer"
         title={<h1 className='titre'>Tesaur</h1>}
-        image={<img className="img-bg-1" src="./img/image1.webp" alt="tt" />}
         />
       },
       {
@@ -88,8 +87,11 @@ function App(){
         title={<h1>Tu as un petit message 
           d’Albert Marquet :</h1>}
         text={<p>Je te complimente d’avoir trouver le bon numéro !<br/>
+        <br/>
         Tu vas bientôt faire la connaissance d’un personnage que j’ai peint dans une de mes autres œuvres ! <br/>
-        Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>J’étais heureux de rencontrer !</p>}
+        <br/>
+        Il est venu spécialement pour toi et va t’aider dans ta quête !<br/>
+        <br/>J’étais heureux de rencontrer !</p>}
         handleStep={()=>handleStep(8)}
         textButton="Suivant"
         />
