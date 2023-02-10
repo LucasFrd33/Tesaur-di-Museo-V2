@@ -62,6 +62,7 @@ function App(){
         step:
         <Resume 
         handleStep={()=>handleStep(5)}
+        image={<img className='img-resume1' src='./img/img-resume1.webp' alt='tt'/>}
         textButton="Suivant"
         title={<h1>Résumé du 1er jeu </h1>}
         text={<p>Rend toi devant cette œuvre, Analyse bien le nom de ce tableau.<br/>

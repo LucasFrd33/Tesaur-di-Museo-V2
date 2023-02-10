@@ -1,6 +1,6 @@
 // import { useState } from "react";
 
-function Resume({handleStep,textButton, title, text, Image}) {
+function Resume({handleStep,textButton, title, text, image}) {
     return (
       <>
       <div className="container-resume">
@@ -10,7 +10,7 @@ function Resume({handleStep,textButton, title, text, Image}) {
         </div>
          <button onClick={handleStep} >{textButton}</button>
       </div>
-      {Image}
+      {image}
     </>
     );
   }
