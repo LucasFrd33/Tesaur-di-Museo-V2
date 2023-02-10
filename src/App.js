@@ -15,7 +15,6 @@ import Resume2 from './components/Resume2';
 import Answer3 from './components/Answer3';
 import Award3 from './components/Award3';
 import Finish from './components/Finish';
-import Popup from './components/popup';
 
 
 function App(){

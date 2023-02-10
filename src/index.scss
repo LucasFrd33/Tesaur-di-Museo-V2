@@ -104,6 +104,10 @@ code {
     margin-left: 45px;
   }
 
+  .button-motion-2{
+    margin-left: 45px;
+  }
+
 
   .img-bg-1{
     margin-bottom: 200px;
@@ -117,16 +121,21 @@ code {
     top: -41.54px;
   }
 
-  .img-motion2{
-    width: 56%;
-    margin-left: 172px;
+  .img-motion2{ 
+    position: static;
+    margin-top: -110% !important;
+    width: 16% !important;
+    margin-left: 94% !important;
+    z-index: -1 !important;
   }
+  
 
   .h1-motion2{
     margin-top: -13% !important;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     margin-left: 1em;
+    position: absolute;
 
     -webkit-text-stroke: 1px white;
   }

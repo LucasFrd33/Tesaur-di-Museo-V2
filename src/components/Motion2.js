@@ -27,7 +27,6 @@ function Motion2({handleStep,textButton}) {
   };
     return (
       <div className="container">
-        <img className='img-motion2' src='./img/group-12.webp' alt='tt'/>
         <h1 className='h1-motion2' >Commençons par le 1er jeu !</h1>
         <Lottie 
 	        options={defaultOptions}
@@ -41,8 +40,7 @@ function Motion2({handleStep,textButton}) {
         show ? "" : 
           <button className='button-motion-2' onClick={handleStep} >{textButton}</button>
         }
-        
-        <button className='btn2-motion2' onClick={handleShowTranscription}>Transcription écrite</button> 
+        <button onClick={handleShowTranscription}>Transcription écrite</button> 
       </div>  
 
 {showTranscription ? "" :
