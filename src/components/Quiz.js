@@ -18,7 +18,7 @@ function Quiz({text, textButton, handleStep, title, image}) {
     //         img:"https://images.pexels.com/photos/325154/pexels-photo-325154.jpeg?auto=compress&cs=tinysrgb&w=800",
     //         explication:"3ieme jeu",
     //     },
-    // ];;
+    // ];;;
 
   return (
     <>
