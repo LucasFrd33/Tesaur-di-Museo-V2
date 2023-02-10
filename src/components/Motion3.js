@@ -2,6 +2,8 @@ import React from 'react';
 import {useState} from 'react';
 import Lottie from 'react-lottie';
 import v1 from "../V1-tbl2.json";
+import AudioSimple from './Audio';
+
 
 function Motion3({handleStep,textButton, image}) {
 
@@ -27,7 +29,10 @@ function Motion3({handleStep,textButton, image}) {
   };
     return (
       <>
+
       <div className="container-motion">
+      <AudioSimple path="./img/maxence_voix.mp3"></AudioSimple>
+
         <h1 className='h1-motion'>Commençons le 2ème jeu !</h1>
         <Lottie 
 	        options={defaultOptions}

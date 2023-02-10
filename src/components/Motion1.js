@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Lottie from 'react-lottie';
 import v1 from "../V1.json";
 import Popup from 'reactjs-popup';
+import AudioSimple from './Audio';
 import 'reactjs-popup/dist/index.css';
 
 
@@ -22,9 +23,12 @@ function Motion1({ handleStep, textButton, image }) {
       preserveAspectRatio: "xMidYMid slice"
     },
   };
+
+
   return (
     <>
     <div className="container-motion">
+      <AudioSimple path="./img/maxence_voix.mp3"></AudioSimple>
       <Lottie
         options={defaultOptions}
         onComplete={() => setShow(false)}
