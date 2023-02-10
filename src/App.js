@@ -216,6 +216,7 @@ function App(){
         textButton="BRAVO"
         />,
       },
+      //RAJOUTER UNE FIN
     ]
     function handleStep(i){
       const set = i
