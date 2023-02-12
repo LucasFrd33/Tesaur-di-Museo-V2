@@ -33,7 +33,7 @@ function Motion1({ handleStep, textButton, image }) {
   return (
     <>
       <div className="container-motion">
-        <AudioSimple path="./img/maxence_voix.mp3"></AudioSimple>
+        <AudioSimple path="./mp3/son-1.mp3"></AudioSimple>
         <Lottie
           options={defaultOptions}
           onComplete={() => setShow(false)}
@@ -51,9 +51,9 @@ function Motion1({ handleStep, textButton, image }) {
             </button>
             <Popup className='popup' open={open} closeOnDocumentClick onClose={closeModal}>
               <div className="modal">
-                <a className="close" onClick={closeModal}>
+                <p className="close" onClick={closeModal}>
                   &times;
-                </a>
+                </p>
                 <p className='popup-text'> (François Mauriac)	- Viens me voir ! Je suis François Mauriac, le buste avec un style <br />
                   cubique. Veux-tu que je te raconte mon histoire ?<br />
 

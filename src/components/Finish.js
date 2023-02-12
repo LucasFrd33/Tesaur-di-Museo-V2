@@ -18,7 +18,7 @@ function Finish({handleStep,textButton}) {
     
     return (
       <div className="container-finish">
-        <h1>Entre le code pour ouvrir le coffre</h1>
+        <h1>Bravo ! Il ne te reste plus qu’à ouvrir le fameux trésor !</h1>
       <div className='code'>
          <select ref={Chiffre1} name="Chiffre1" onChange={handleChange}>
           <option value ="none">1</option>

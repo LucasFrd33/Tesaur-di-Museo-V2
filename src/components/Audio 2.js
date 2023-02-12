@@ -11,7 +11,7 @@ export default class AudioSimple extends React.Component {
     }
     render() {
         if(this.state.isPlaying) return;
-        this.setState({ isPlaying: true });
+        this.state.isPlaying = true
         this.audio.play();
         return <></>
     }

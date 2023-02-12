@@ -205,6 +205,8 @@ function App(){
         image={<img className="img-answer3" src="./img/img-motion4.webp" alt="tt" />}
         handleStep={()=>handleStep(18)}
         textButton="Suivant"
+        retour={()=>handleStep(16)}
+        buttonRetour="Retour"
         />,
       },
       {
@@ -218,7 +220,8 @@ function App(){
         step:
         <Finish
         handleStep={()=>handleStep(1)}
-        textButton="BRAVO"
+        textButton="Félicitation ! 
+        Tu l’as ouvert ! "
         />,
       },
       //RAJOUTER UNE FIN

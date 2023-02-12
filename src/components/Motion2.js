@@ -30,7 +30,7 @@ function Motion2({handleStep,textButton, image}) {
     return (
       <>
       <div className="container-motion">
-      <AudioSimple path="./img/maxence_voix.mp3"></AudioSimple>
+      <AudioSimple path="./mp3/son-2.mp3"></AudioSimple>
         <h1 className='h1-motion' >Commençons par le 1er jeu !</h1>
       <div className="actions">
         {
