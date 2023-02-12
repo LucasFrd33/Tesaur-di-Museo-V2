@@ -128,7 +128,7 @@ code {
   }
 
   .img-motion1, .img-quiz, .img-motion2, .img-resume1, .img-transition, .img-quiz2, .img-motion3, .img-resume2,
-  .img-award2, .img-quiz3, .img-motion4, .img-resume3, .img-answer3,{
+  .img-award2, .img-quiz3, .img-motion4, .img-resume3, .img-answer3, {
     position: absolute;
     top: 0;
     right: 0px;
@@ -140,6 +140,15 @@ code {
   top: 40px;
 }
 
+.img-sound{
+  position: absolute;
+  width: 80.56px;
+  height: 80.56px;
+  left: 274px;
+  top: 537.37px;
+  
+  transform: rotate(-18.36deg);
+}
 
 
 .img-resume1{
@@ -201,7 +210,7 @@ code {
   }
 
   .popup-content {
-    background: #7e7e7e;
+    background: #dbdbdb;
     width: 90%;
     height: 90%;
     padding: 5px;

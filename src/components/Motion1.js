@@ -8,9 +8,9 @@ import AudioSimple from './Audio';
 //test de push
 
 
-function Motion1({ handleStep, textButton, image }) {
+function Motion1({ handleStep, textButton, image, image2}) {
 
-  const [show, setShow] = useState(true)
+  const [, setShow] = useState(true)
   const [open, setOpen] = useState(false);
   const closeModal = () => setOpen(false);
 
@@ -41,7 +41,6 @@ function Motion1({ handleStep, textButton, image }) {
 
         <div className="actions">
           {
-            show ? "" :
               <button className='button-motion-1' onClick={handleStep} >{textButton}</button>
           }
 
@@ -54,24 +53,9 @@ function Motion1({ handleStep, textButton, image }) {
                 <p className="close" onClick={closeModal}>
                   &times;
                 </p>
-                <p className='popup-text'> (François Mauriac)	- Viens me voir ! Je suis François Mauriac, le buste avec un style <br />
-                  cubique. Veux-tu que je te raconte mon histoire ?<br />
-
-                  (Albert Marquet )	- Arrête d'écouter cet écrivain, il va encore te parler sa remise de prix<br />
-                  concernant ces livres. Mais vient plutôt admirer mes tableaux notamment mon autoportrait ! Tu le trouve beau, n’est ce pas !<br />
-
-                  (André Lhote)	- Viens plutôt contempler mon autoportrait ! Il y a tellement de nuances !<br />
-                  Alors chez Albert Marquet, c’est assez terne, maussade.<br />
-
-                  (François Mauriac)	- Arrêtez vous mes amis ! Vos deux oeuvres sont très belles à<br />
-                  leur manière ! Je crois que notre chèr visiteur, n’est pas venu par hasard ! Alors hâtez vous de lui donner les instructions concernant le 1er chiffre du cadenas !<br />
-
-                  (André Lhote)	- Je comprends mieux ! Mais pourquoi moi ? Albert Marquet peut<br />
-                  également le faire !
-
-                  (Albert Marquet )	- Certainement monsieur ! Je suis bien plus en mesure de le faire que<br />
-                  notre spécialiste en cubisme André Lhote !<br />
-                  Vas nous voir, que ce soit André Lhote, François Mauriac et moi même. Tu obtiendras de chacun de nous, un chiffre, qu’il faudra additionner. Cela te donnera le premier élément du cadenas !
+                <p className='popup-text'> 
+                “Mon ami, il faut que je te dise un secret. Au musée, peu de personnes en ont hérité. Mais je t’ai choisi. Je vais donc te le confier !<br /> Ainsi, il pourra survivre au temps. Je te demande qu’une chose, de rester assez discret pour ne pas le compromettre. <br /> <br />
+                C’est un trésor transmis de génération en génération. Pour l’ouvrir, il te faudra la combinaison du cadenas qui le verrouille.<br /> Tu l’obtiendras avec l’aide de certaines figures emblématiques de salle “Les années 1910 à 1940 : du Cubisme au retour à l’ordre”.
                 </p>
               </div>
             </Popup>
@@ -79,6 +63,7 @@ function Motion1({ handleStep, textButton, image }) {
         </div>
       </div>
       {image}
+      {image2}
     </>
   );
 }

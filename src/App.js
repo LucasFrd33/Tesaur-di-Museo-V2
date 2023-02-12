@@ -37,6 +37,7 @@ function App(){
         handleStep={()=>handleStep(2)}
         image={<img className='img-motion1' src="./img/image2.webp" alt="tt" />}
         textButton="Suivant"
+        image2={<img className='img-sound' src='./img/sound.webp' alt='tt' />}
         />
       },
 // Fin Intro
@@ -55,6 +56,7 @@ function App(){
         <Motion2
         handleStep={()=>handleStep(4)}
         image={<img className='img-motion2' src='./img/image2.webp' alt='tt'/>}
+        image2={<img className='img-sound' src='./img/sound.webp' alt='tt' />}
         textButton="Suivant"
         />
       },
@@ -119,6 +121,7 @@ function App(){
         <Motion3
         handleStep={()=>handleStep(10)}
         image={<img className="img-motion3" src="./img/img-motion3.webp" alt="tt" />}
+        image2={<img className='img-sound' src='./img/sound.webp' alt='tt' />}
         textButton="Suivant"
         />
       },
@@ -182,6 +185,7 @@ function App(){
         step:
         <Motion4
         image={<img className="img-motion4" src="./img/img-motion4.webp" alt="tt" />}
+        image2={<img className='img-sound' src='./img/sound.webp' alt='tt' />}
         handleStep={()=>handleStep(16)}
         textButton="Suivant"
         />
