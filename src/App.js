@@ -224,9 +224,13 @@ function App(){
         step:
         <Finish
         handleStep={()=>handleStep(1)}
+        text={<p className='p-finish'>Entre la combinaison <br />
+          du cadenas :</p>}
         textButton="Félicitation ! 
         Tu l’as ouvert ! "
+        image={<img className="" src="./img/tresor-1.webp" alt="tt" />}
         />,
+
       },
       //RAJOUTER UNE FIN
 
