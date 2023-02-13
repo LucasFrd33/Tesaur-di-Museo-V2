@@ -16,6 +16,7 @@ import Answer3 from './components/Answer3';
 import Award3 from './components/Award3';
 import Finish from './components/Finish';
 import Transition from './components/Transition';
+import Finish2 from './components/Finish2';
 
 
 function App(){
@@ -223,12 +224,22 @@ function App(){
       {
         step:
         <Finish
-        handleStep={()=>handleStep(1)}
+        handleStep={()=>handleStep(20)}
         text={<p className='p-finish'>Entre la combinaison <br />
           du cadenas :</p>}
-        textButton="Félicitation ! 
-        Tu l’as ouvert ! "
+        textButton="Suivant"
         image={<img className="" src="./img/tresor-1.webp" alt="tt" />}
+        />,
+
+      },
+      {
+        step:
+        <Finish2
+        handleStep={()=>handleStep(1)}
+        text={<p className='p-finish'>Clique sur le bouton <br />
+        pour connaitre la récompense !</p>}
+        textButton="Obtenir ma récompense"
+        image={<img className="" src="./img/tresor-2.webp" alt="tt" />}
         />,
 
       },
